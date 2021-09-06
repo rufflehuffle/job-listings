@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap");
+.page {
+  background-color: #effafa;
+  font-family: 'Spartan', sans-serif;
+  margin: 1rem;
+}
+
+.job-listing {
+  background-color: white;
+  position: relative;
+  padding: 2rem;
+  margin-top: 3rem;
+  border-radius: 0.4rem;
+  -webkit-box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.5rem 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.job-listing::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.4rem;
+  border-top-left-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
+  background: #5ba4a4;
+}
+
+.job-listing__company-logo {
+  position: absolute;
+  top: -1.5rem;
+  left: 1.5rem;
+  width: 3rem;
+}
+
+.job-listing__company-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  color: #5ba4a4;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.job-listing--new .job-listing__company-name::before {
+  margin-left: 1rem;
+  padding-top: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1rem;
+  content: 'NEW!';
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  color: white;
+  background: #5ba4a4;
+}
+
+.job-listing--featured .job-listing__company-name::after {
+  margin-left: 1rem;
+  padding-top: 0.2rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  border-radius: 1rem;
+  content: 'FEATURED';
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  color: white;
+  background: black;
+}
+
+.job-listing__info {
+  color: #7b8e8e;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #7b8e8e;
+}
+
+.job-listing__employment-type::before {
+  content: '• ';
+}
+
+.job-listing__employment-type::after {
+  content: ' •';
+}
+
+.job-listing__tag-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.job-listing__tag {
+  color: #5ba4a4;
+  background: #effafa;
+  font-weight: bold;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+/*# sourceMappingURL=style.css.map */

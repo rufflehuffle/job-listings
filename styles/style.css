@@ -4,6 +4,18 @@
   background-color: #effafa;
   font-family: 'Spartan', sans-serif;
   margin: 1rem;
+  margin-top: 12rem;
+}
+
+.page__content::before {
+  content: '';
+  background-color: #5ba4a4;
+  background-image: url("../images/bg-header-mobile.svg");
+  height: 9rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .job-listing {

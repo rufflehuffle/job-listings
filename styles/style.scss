@@ -4,6 +4,20 @@
   background-color: hsl(180, 52%, 96%);
   font-family: 'Spartan', sans-serif;
   margin: 1rem;
+  margin-top: 12rem;  
+
+  &__content {
+    &::before {
+      content: '';
+      background-color: hsl(180, 29%, 50%);
+      background-image: url('../images/bg-header-mobile.svg');
+      height: 9rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+  }
 }
 
 .job-listing {

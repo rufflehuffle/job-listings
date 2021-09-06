@@ -1,0 +1,29 @@
+.page__content::before {
+  background-image: url("../images/bg-header-desktop.svg");
+}
+
+.job-listing {
+  padding-left: 10rem;
+  padding-bottom: 1rem;
+  max-width: 80vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.job-listing__info {
+  border: none;
+}
+
+.job-listing__company-logo {
+  top: calc(50% - 3rem);
+  left: 2rem;
+  width: 6rem;
+}
+
+.job-listing__tag-container {
+  position: absolute;
+  right: 1rem;
+  top: calc(50% - 1rem);
+  margin: 0;
+}
+/*# sourceMappingURL=desktop.css.map */

@@ -1,249 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Job Listings</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" media="screen and (min-width: 992px)" href="./styles/desktop.css">
-  </head>
-  <body class="page">
-    <main class="page__content">
-      <div class="filter">
-        <div class="filter__tag-container tag-container">
-          <span class="filter__tag tag">Fullstack</span>
-          <span class="filter__tag tag">CSS</span>
-          <span class="filter__tag tag">JavaScript</span>
-        </div>
-        <button class="filter__button">Clear</button>
+  <title>Frontend Mentor | Job Listings</title>
+
+  <link rel="stylesheet" href="./styles/reset.css" />
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" media="screen and (min-width: 992px)" href="./styles/desktop.css">
+</head>
+
+<body class="page">
+  <main class="page__content">
+    <div class="filter">
+      <div class="filter__tag-container tag-container">
+        <span class="filter__tag tag">Fullstack</span>
+        <span class="filter__tag tag">CSS</span>
+        <span class="filter__tag tag">JavaScript</span>
       </div>
+      <button class="filter__button">Clear</button>
+    </div>
 
-      <div class="job-listing job-listing--new job-listing--featured">
-        <img
-          src="./images/photosnap.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Photosnap</h2>
-        <h3 class="job-listing__job-title">Senior Frontend Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">1d ago</span>
-          <span class="job-listing__employment-type">Full Time</span>
-          <span class="job-listing__location">USA only</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Frontend</span>
-          <span class="job-listing__tag tag">Senior</span>
-          <span class="job-listing__tag tag">HTML</span>
-          <span class="job-listing__tag tag">CSS</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-        </div>
+    <div class="job-listing job-listing--new job-listing--featured" data-role="frontend" data-level="senior"
+      data-languages="html css javascript">
+      <img src="./images/photosnap.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Photosnap</h2>
+      <h3 class="job-listing__job-title">Senior Frontend Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">1d ago</span>
+        <span class="job-listing__employment-type">Full Time</span>
+        <span class="job-listing__location">USA only</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Frontend</span>
+        <span class="job-listing__tag tag">Senior</span>
+        <span class="job-listing__tag tag">HTML</span>
+        <span class="job-listing__tag tag">CSS</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+      </div>
+    </div>
 
-      <div class="job-listing job-listing--new job-listing--featured">
-        <img
-          src="./images/manage.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Manage</h2>
-        <h3 class="job-listing__job-title">Fullstack Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">1d ago</span>
-          <span class="job-listing__employment-type">Part Time</span>
-          <span class="job-listing__location">Remote</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Fullstack</span>
-          <span class="job-listing__tag tag">Midweight</span>
-          <span class="job-listing__tag tag">Python</span>
-          <span class="job-listing__tag tag">React</span>
-        </div>
+    <div class="job-listing job-listing--new job-listing--featured" data-role="fullstack" data-level="midweight"
+      data-languages="python" data-tools="react">
+      <img src="./images/manage.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Manage</h2>
+      <h3 class="job-listing__job-title">Fullstack Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">1d ago</span>
+        <span class="job-listing__employment-type">Part Time</span>
+        <span class="job-listing__location">Remote</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Fullstack</span>
+        <span class="job-listing__tag tag">Midweight</span>
+        <span class="job-listing__tag tag">Python</span>
+        <span class="job-listing__tag tag">React</span>
+      </div>
+    </div>
 
-      <div class="job-listing job-listing--new">
-        <img
-          src="./images/account.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Account</h2>
-        <h3 class="job-listing__job-title">Junior Frontend Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">2d ago</span>
-          <span class="job-listing__employment-type">Part Time</span>
-          <span class="job-listing__location">USA only</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Junior</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-          <span class="job-listing__tag tag">React</span>
-          <span class="job-listing__tag tag">Sass</span>
-        </div>
+    <div class="job-listing job-listing--new" data-role="frontend" data-level="junior" data-languages="javascript"
+      data-tools="react sass">
+      <img src="./images/account.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Account</h2>
+      <h3 class="job-listing__job-title">Junior Frontend Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">2d ago</span>
+        <span class="job-listing__employment-type">Part Time</span>
+        <span class="job-listing__location">USA only</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Junior</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+        <span class="job-listing__tag tag">React</span>
+        <span class="job-listing__tag tag">Sass</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/myhome.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">MyHome</h2>
-        <h3 class="job-listing__job-title">Junior Frontend Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">5d ago</span>
-          <span class="job-listing__employment-type">Contract</span>
-          <span class="job-listing__location">USA only</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Frontend</span>
-          <span class="job-listing__tag tag">Junior</span>
-          <span class="job-listing__tag tag">CSS</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-        </div>
+    <div class="job-listing" data-role="frontend" data-level="junior" data-languages="css javascript">
+      <img src="./images/myhome.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">MyHome</h2>
+      <h3 class="job-listing__job-title">Junior Frontend Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">5d ago</span>
+        <span class="job-listing__employment-type">Contract</span>
+        <span class="job-listing__location">USA only</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Frontend</span>
+        <span class="job-listing__tag tag">Junior</span>
+        <span class="job-listing__tag tag">CSS</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/loop-studios.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Loop Studios</h2>
-        <h3 class="job-listing__job-title">Software Engineer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">1w ago</span>
-          <span class="job-listing__employment-type">Full Time</span>
-          <span class="job-listing__location">Worldwide</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Fullstack</span>
-          <span class="job-listing__tag tag">Midweight</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-          <span class="job-listing__tag tag">Ruby</span>
-          <span class="job-listing__tag tag">Sass</span>
-        </div>
+    <div class="job-listing" data-role="fullstack" data-level="midweight" data-languages="javascript"
+      data-tools="ruby sass">
+      <img src="./images/loop-studios.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Loop Studios</h2>
+      <h3 class="job-listing__job-title">Software Engineer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">1w ago</span>
+        <span class="job-listing__employment-type">Full Time</span>
+        <span class="job-listing__location">Worldwide</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Fullstack</span>
+        <span class="job-listing__tag tag">Midweight</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+        <span class="job-listing__tag tag">Ruby</span>
+        <span class="job-listing__tag tag">Sass</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/faceit.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">FaceIt</h2>
-        <h3 class="job-listing__job-title">Junior Backend Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">2w ago</span>
-          <span class="job-listing__employment-type">Full Time</span>
-          <span class="job-listing__location">UK only</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Backend</span>
-          <span class="job-listing__tag tag">Junior</span>
-          <span class="job-listing__tag tag">Ruby</span>
-          <span class="job-listing__tag tag">RoR</span>
-        </div>
+    <div class="job-listing" data-role="backend" data-level="junior" data-languages="ruby" data-tools="ror">
+      <img src="./images/faceit.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">FaceIt</h2>
+      <h3 class="job-listing__job-title">Junior Backend Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">2w ago</span>
+        <span class="job-listing__employment-type">Full Time</span>
+        <span class="job-listing__location">UK only</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Backend</span>
+        <span class="job-listing__tag tag">Junior</span>
+        <span class="job-listing__tag tag">Ruby</span>
+        <span class="job-listing__tag tag">RoR</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/shortly.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Shortly</h2>
-        <h3 class="job-listing__job-title">Junior Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">2w ago</span>
-          <span class="job-listing__employment-type">Full Time</span>
-          <span class="job-listing__location">Worldwide</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Frontend</span>
-          <span class="job-listing__tag tag">Junior</span>
-          <span class="job-listing__tag tag">HTML</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-          <span class="job-listing__tag tag">Sass</span>
-        </div>
+    <div class="job-listing" data-role="frontend" data-level="junior" data-languages="html javascript"
+      data-tools="sass">
+      <img src="./images/shortly.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Shortly</h2>
+      <h3 class="job-listing__job-title">Junior Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">2w ago</span>
+        <span class="job-listing__employment-type">Full Time</span>
+        <span class="job-listing__location">Worldwide</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Frontend</span>
+        <span class="job-listing__tag tag">Junior</span>
+        <span class="job-listing__tag tag">HTML</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+        <span class="job-listing__tag tag">Sass</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/insure.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Insure</h2>
-        <h3 class="job-listing__job-title">Junior Frontend Developer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">2w ago</span>
-          <span class="job-listing__employment-type">Full Time</span>
-          <span class="job-listing__location">USA only</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Frontend</span>
-          <span class="job-listing__tag tag">Junior</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-          <span class="job-listing__tag tag">Vue</span>
-          <span class="job-listing__tag tag">Sass</span>
-        </div>
+    <div class="job-listing" data-role="frontend" data-level="junior" data-languages="javascript" data-tools="vue sass">
+      <img src="./images/insure.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Insure</h2>
+      <h3 class="job-listing__job-title">Junior Frontend Developer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">2w ago</span>
+        <span class="job-listing__employment-type">Full Time</span>
+        <span class="job-listing__location">USA only</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Frontend</span>
+        <span class="job-listing__tag tag">Junior</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+        <span class="job-listing__tag tag">Vue</span>
+        <span class="job-listing__tag tag">Sass</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/eyecam-co.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">Eyecam Co.</h2>
-        <h3 class="job-listing__job-title">Full Stack Engineer</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">3w ago</span>
-          <span class="job-listing__employment-type">Full Time</span>
-          <span class="job-listing__location">Worldwide</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Fullstack</span>
-          <span class="job-listing__tag tag">Midweight</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-          <span class="job-listing__tag tag">Python</span>
-          <span class="job-listing__tag tag">Django</span>
-        </div>
+    <div class="job-listing" data-role="fullstack" data-level="midweight" data-languages="javascript python"
+      data-tools="django">
+      <img src="./images/eyecam-co.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">Eyecam Co.</h2>
+      <h3 class="job-listing__job-title">Full Stack Engineer</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">3w ago</span>
+        <span class="job-listing__employment-type">Full Time</span>
+        <span class="job-listing__location">Worldwide</span>
       </div>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Fullstack</span>
+        <span class="job-listing__tag tag">Midweight</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+        <span class="job-listing__tag tag">Python</span>
+        <span class="job-listing__tag tag">Django</span>
+      </div>
+    </div>
 
-      <div class="job-listing">
-        <img
-          src="./images/the-air-filter-company.svg"
-          alt=""
-          class="job-listing__company-logo"
-        />
-        <h2 class="job-listing__company-name">The Air Filter Company</h2>
-        <h3 class="job-listing__job-title">Front-end Dev</h3>
-        <div class="job-listing__info">
-          <span class="job-listing__age">1mo ago</span>
-          <span class="job-listing__employment-type">Part Time</span>
-          <span class="job-listing__location">Worldwide</span>
-        </div>
-        <div class="job-listing__tag-container tag-container">
-          <span class="job-listing__tag tag">Frontend</span>
-          <span class="job-listing__tag tag">Junior</span>
-          <span class="job-listing__tag tag">JavaScript</span>
-          <span class="job-listing__tag tag">React</span>
-          <span class="job-listing__tag tag">Sass</span>
-        </div>
+    <div class="job-listing" data-role="frontend" data-level="junior" data-languages="javascript"
+      data-tools="react sass">
+      <img src="./images/the-air-filter-company.svg" alt="" class="job-listing__company-logo" />
+      <h2 class="job-listing__company-name">The Air Filter Company</h2>
+      <h3 class="job-listing__job-title">Front-end Dev</h3>
+      <div class="job-listing__info">
+        <span class="job-listing__age">1mo ago</span>
+        <span class="job-listing__employment-type">Part Time</span>
+        <span class="job-listing__location">Worldwide</span>
       </div>
-    </main>
-  </body>
+      <div class="job-listing__tag-container tag-container">
+        <span class="job-listing__tag tag">Frontend</span>
+        <span class="job-listing__tag tag">Junior</span>
+        <span class="job-listing__tag tag">JavaScript</span>
+        <span class="job-listing__tag tag">React</span>
+        <span class="job-listing__tag tag">Sass</span>
+      </div>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+
 </html>

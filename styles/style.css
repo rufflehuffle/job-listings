@@ -51,16 +51,27 @@
 .filter__button {
   position: absolute;
   right: 1rem;
-  top: calc(50% - 1rem);
+  top: calc(50% - 0.8rem);
   background: white;
   font-weight: 700;
   color: #7b8e8e;
   border: none;
 }
 
+.filter__button:hover {
+  color: #5ba4a4;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .filter__tag {
   position: relative;
   padding-right: 2.5rem;
+}
+
+.filter__tag:hover::after {
+  background-color: #2c3a3a;
+  cursor: pointer;
 }
 
 .filter__tag::after {
@@ -156,6 +167,11 @@
   background: black;
 }
 
+.job-listing__job-title:hover {
+  color: #5ba4a4;
+  cursor: pointer;
+}
+
 .job-listing__info {
   color: #7b8e8e;
   padding-top: 1rem;
@@ -173,5 +189,11 @@
 
 .job-listing__tag-container {
   margin-top: 1rem;
+}
+
+.job-listing__tag:hover {
+  background: #5ba4a4;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

@@ -21,6 +21,25 @@ function filterTagClick(e) {
   filterContainer.firstChild ? filter.style.display = 'block' : filter.style.display = 'none'; // Hide filter bar if no filter tags
 }
 
+function filterListings(tagType, tagValue) {
+  const jobListings = Array.from(document.querySelectorAll('.job-listing'));
+  const filtered = jobListings.filter(listing => !(listing.dataset[tagType].includes(tagValue)));
+
+  filtered.forEach(listing => listing.style.display = 'none');
+}
+
+function filterUsingTags() {
+  const filterContainer = document.querySelector('.js-filter-container');
+  const tags = Array.from(filterContainer.children);
+
+  const jobListings = Array.from(document.querySelectorAll('.job-listing'));
+  jobListings.forEach(jobListing => jobListing.style.display = 'block');
+
+  tags.forEach(tag => {
+    filterListings(tag.dataset.tagType, tag.dataset.tagValue);
+  })
+}
+
 // Listing tag on click
 Array.from(document.querySelectorAll('.js-listing-tag')).forEach(tag => {
   tag.addEventListener('click', (e) => {
@@ -54,22 +73,3 @@ document.querySelector('.js-filter-button').addEventListener('click', (e) => {
   while (filterContainer.firstChild) filterContainer.removeChild(filterContainer.firstChild);
   filter.style.display = 'none';
 })
-
-function filterListings(tagType, tagValue) {
-  const jobListings = Array.from(document.querySelectorAll('.job-listing'));
-  const filtered = jobListings.filter(listing => !(listing.dataset[tagType].includes(tagValue)));
-
-  filtered.forEach(listing => listing.style.display = 'none');
-}
-
-function filterUsingTags() {
-  const filterContainer = document.querySelector('.js-filter-container');
-  const tags = Array.from(filterContainer.children);
-
-  const jobListings = Array.from(document.querySelectorAll('.job-listing'));
-  jobListings.forEach(jobListing => jobListing.style.display = 'block');
-
-  tags.forEach(tag => {
-    filterListings(tag.dataset.tagType, tag.dataset.tagValue);
-  })
-}
